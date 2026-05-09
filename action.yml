@@ -1,0 +1,14 @@
+    name: 'some container action'
+    description: 'some description here'
+    author: 'Hector Rodriguez'
+    inputs:
+      myInput:
+        description: 'greeting to use'
+        required: true
+        default: 'Awesome Hector'
+    outputs:
+      myOutput:
+        description: 'total memory'
+    runs:
+      using: 'docker'
+      image: 'Dockerfile'
